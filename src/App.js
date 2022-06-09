@@ -61,19 +61,21 @@ function App() {
   const diceElements = dice.map(die => <Die holdDice={() => holdDice(die.id)} key={die.id} value={die.value} isHeld={die.isHeld} />)
 
   return (
-    <main>      
-      <h1 className="title">Tenzies</h1>
-      <p className="instructions">Roll until all dice are the same. 
-        Click each die to freeze it at its current value between rolls.</p>
-      <div className='dice-container'>
-        {diceElements}        
-      </div>
-      <button 
-        className="roll-dice" 
-        onClick={rollDice}>
-          {tenzies ? "New Game" : "Roll"}
-      </button>
-    </main>
+    <div className="container"> 
+      <main>      
+        <h1 className="title">Tenzies</h1>
+        <p className="instructions">Roll until all dice are the same. 
+          Click each die to freeze it at its current value between rolls.</p>
+        <div className='dice-container'>
+          {diceElements}        
+        </div>
+        <button 
+          className="roll-dice" 
+          onClick={rollDice}>
+            {tenzies ? "New Game" : "Roll"}
+        </button>
+      </main>
+    </div>
   );
 }
 
