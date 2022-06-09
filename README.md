@@ -1,2 +1,3 @@
-[live preview ](https://businesspepega.github.io/tenzies/)
+# Tenzies
+[Live preview ](https://businesspepega.github.io/tenzies/)
 
