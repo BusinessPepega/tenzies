@@ -22,8 +22,7 @@ function App() {
     while (i>0) {    
             newDice.push(generateNewDie())
       i--
-    }
-    //console.log(newDice)
+    }    
     return newDice
   }
   
@@ -35,8 +34,7 @@ function App() {
       const firstValue = dice[9].value
       const allSameValue = dice.every(die => die.value === firstValue)
       if (allHeld && allSameValue) {
-        setTenzies(!tenzies)
-        //console.log("you won")
+        setTenzies(true)        
       }            
     }, [dice])
     
